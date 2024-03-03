@@ -4,7 +4,9 @@
  * @return {boolean[]}
  */
 var kidsWithCandies = function(candies, extraCandies) {
-    let maximum = Math.max(...candies);
+    const maxCandies = Math.max(...candies);
     
-    return candies.map(candy => candy + extraCandies >= maximum);
+    const result = candies.map(candy => candy + extraCandies >= maxCandies);
+    
+    return result;
 };
